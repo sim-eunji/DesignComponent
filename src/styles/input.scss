@@ -13,6 +13,10 @@
       border: 1px solid $color-red;
     }
 
+    .ui.input label {
+      color: $color-red;
+    }
+
     .validation-message {
       color: $color-red;
     }
@@ -31,19 +35,27 @@
   
   .ui.input {
     position: relative;
-    
+
+    label {
+      background: #FFF;
+      left: 13px;
+      position: absolute;
+      top: -8px;
+      color: #8B8B8B;
+      font-size: 12px;
+      font-weight: normal;
+    }
+
     input {
       padding: .5rem .8rem;
       background-color: white;
-      border: 1px solid #dfdfdf;
+      border: 1px solid #8B8B8B;
       border-radius: 6px;
       font-size: 14px;
       line-height: 24px;
       font-weight: normal;
       width: 200px;
     }
-
-
   }
 
 }

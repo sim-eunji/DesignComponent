@@ -27,7 +27,10 @@ class InputProps {
         type: Boolean,
         default: true
       },
-      label: String,
+      label: {
+        type: String, 
+        default: ""
+      },
       autofocus: Boolean
     }
 
@@ -96,9 +99,8 @@ const Input = {
     if(props.disabled) uiInputClassName += ` disabled`
     if(props.fluid) uiInputClassName += ` fluid`
 
-    if(props.label) {
-      children.push(h(
-        'label',
+    const label = h(
+      'label',
         {
           attrs: {
             for: this._id
@@ -110,13 +112,13 @@ const Input = {
           }
         },
         [ props.label ]
-      ))
-    }
-
+    )
+ 
     children.push(h(
       'div',
       { class: uiInputClassName },
       [
+        label,
         input,
         (
           (props.error || props.success) ?

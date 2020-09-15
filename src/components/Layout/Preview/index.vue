@@ -8,12 +8,12 @@
 
         <div class="element">
           <p>Basic Input</p>
-          <ui-input type="text" value="짐살라빔"></ui-input>
+          <ui-input type="text" value="" label="아이디" placeholder="placeholder"></ui-input>
         </div>
         
         <div class="element">
           <p>Error Input</p>
-          <ui-input type="text" value="짐살라빔" error></ui-input>
+          <ui-input type="text" value="짐살라빔" label="비밀번호" error></ui-input>
         </div>
 
 
