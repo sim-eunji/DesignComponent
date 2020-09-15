@@ -1,4 +1,4 @@
-# 디자인된 컴포넌트 
+# Awsome UI Component 
 
 ## Project setup
 ```

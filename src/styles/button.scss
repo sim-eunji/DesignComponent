@@ -1,0 +1,8 @@
+@import "./theme.scss";
+
+$button-colors: (
+  black: (default: $color-black),
+  red: (default: $color-red),
+  yellow: (default: $color-yellow)
+);
+

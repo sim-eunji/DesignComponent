@@ -25,6 +25,23 @@
       </div>
 
     </div>
+
+    <div>
+      <h1>Button</h1>
+      <hr>
+
+      <div class="example">
+
+        <div class="element">
+          <p>Basic Button</p>
+          <ui-button> 버튼임 </ui-button>
+        </div>
+  
+      </div>
+
+    </div>
+
+
   </div>
 </template>
 
