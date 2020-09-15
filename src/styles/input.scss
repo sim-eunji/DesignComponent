@@ -1,0 +1,49 @@
+@import "./theme.scss";
+
+.ui-input.field {
+  margin: 1.5rem 0;
+
+  .validation-message {
+    margin-top: 4px;
+    font-weight: 400;
+  }
+
+  &.error {
+    .ui.input input {
+      border: 1px solid $color-red;
+    }
+
+    .validation-message {
+      color: $color-red;
+    }
+  }
+
+  &.success {
+    .ui.input input {
+      border: 1px solid $color-green;
+    }
+
+    .validation-message {
+      color: $color-green;
+    }
+  }
+
+  
+  .ui.input {
+    position: relative;
+    
+    input {
+      padding: .5rem .8rem;
+      background-color: white;
+      border: 1px solid #dfdfdf;
+      border-radius: 6px;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: normal;
+      width: 200px;
+    }
+
+
+  }
+
+}
